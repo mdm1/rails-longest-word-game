@@ -1,0 +1,17 @@
+<div class="container">
+
+  <h1>Results</h1>
+
+  <p>Your word: <%= @attempt %></p>
+  <p>Time taken: <%= @final_hash[:time] %> seconds</p>
+  <p>Your score: <%= @final_hash[:score] %></p>
+  <p>Message: <%= @final_hash[:message].capitalize %></p>
+
+  <p>Total Score: <%= @session_score %></p>
+  <p>Average Score: <%= @session_average %></p>
+
+<p>
+  <%= link_to "Play again", new_path %>
+</p>
+
+</div>
